@@ -45,6 +45,7 @@ view: order_ticket_tbl {
   dimension: eventid {
     type: string
     sql: ${TABLE}.eventid ;;
+    primary_key: yes
   }
 
   dimension: hostmemberid {
@@ -63,7 +64,7 @@ view: order_ticket_tbl {
   }
 
   dimension: ordernumber {
-    primary_key: yes
+
     type: string
     sql: ${TABLE}.ordernumber ;;
   }

@@ -1,11 +1,11 @@
-connection: "hive_connection"
+connection: "ascend_mysql"
 
 # include all the views
 include: "/views/**/*.view"
 
 datagroup: ascend_order_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "0 seconds"
+  max_cache_age: "5 minutes"
 
 }
 
