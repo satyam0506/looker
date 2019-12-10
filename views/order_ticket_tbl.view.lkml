@@ -98,7 +98,7 @@ view: order_ticket_tbl {
   }
 
   dimension: sourcetimestamp {
-    type: number
+    type: date_time
     sql: ${TABLE}.sourcetimestamp ;;
   }
 
