@@ -1,4 +1,4 @@
-connection: "ascend_mysql"
+connection: "hive_connection"
 
 # include all the views
 include: "/views/**/*.view"
