@@ -5,7 +5,7 @@ include: "/views/**/*.view"
 
 datagroup: ascend_order_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "5 minutes"
+  max_cache_age: "10 minutes"
 
 }
 

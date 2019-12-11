@@ -103,7 +103,7 @@ view: order_ticket_vw {
   }
 
   dimension: sourcetimestamp {
-    type: string
+    type: date
     sql: ${TABLE}.sourcetimestamp ;;
   }
 
