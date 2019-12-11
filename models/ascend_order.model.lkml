@@ -12,4 +12,4 @@ datagroup: ascend_order_default_datagroup {
 persist_with: ascend_order_default_datagroup
 
 
-explore: order_ticket_tbl {}
+explore: order_ticket_vw {}

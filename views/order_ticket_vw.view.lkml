@@ -1,5 +1,5 @@
-view: order_ticket_tbl {
-  sql_table_name: tm1reportdemodb.order_ticket_tbl ;;
+view: order_ticket_vw {
+  sql_table_name: tm1reportdemodb.order_ticket_vw ;;
   suggestions: no
 
   dimension: archticsaccountid {
@@ -37,10 +37,14 @@ view: order_ticket_tbl {
     sql: ${TABLE}.entryportal ;;
   }
 
+  dimension: etimestamp {
+    type: string
+    sql: ${TABLE}.etimestamp ;;
+  }
+
   dimension: eventdatems {
     type: string
     sql: ${TABLE}.eventdatems ;;
-
   }
 
   dimension: eventid {
@@ -101,9 +105,7 @@ view: order_ticket_tbl {
   dimension: sourcetimestamp {
     type: string
     sql: ${TABLE}.sourcetimestamp ;;
-
   }
-
 
   dimension: sourceversion {
     type: string
@@ -118,11 +120,6 @@ view: order_ticket_tbl {
   dimension: tickettext {
     type: string
     sql: ${TABLE}.tickettext ;;
-  }
-
-  dimension: timestamp {
-    type: number
-    sql: ${TABLE}.`timestamp` ;;
   }
 
   dimension: type {
