@@ -40,6 +40,7 @@ view: order_ticket_tbl {
   dimension: eventdatems {
     type: string
     sql: ${TABLE}.eventdatems ;;
+
   }
 
   dimension: eventid {
@@ -100,6 +101,7 @@ view: order_ticket_tbl {
   dimension: sourcetimestamp {
     type: date_time
     sql: ${TABLE}.sourcetimestamp ;;
+    convert_tz: yes
   }
 
   dimension: sourceversion {
