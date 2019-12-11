@@ -99,10 +99,13 @@ view: order_ticket_tbl {
   }
 
   dimension: sourcetimestamp {
-    type: date
+    type: string
     sql: ${TABLE}.sourcetimestamp ;;
-    convert_tz: no
-    datatype: timestamp
+
+  }
+  dimension: Source_Time{
+    type: date
+    sql: sourcetimestamp ;;
   }
 
   dimension: sourceversion {
