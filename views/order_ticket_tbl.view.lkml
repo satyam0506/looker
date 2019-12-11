@@ -103,10 +103,7 @@ view: order_ticket_tbl {
     sql: ${TABLE}.sourcetimestamp ;;
 
   }
-  dimension: Source_Time{
-    type: date
-    sql: sourcetimestamp ;;
-  }
+
 
   dimension: sourceversion {
     type: string
